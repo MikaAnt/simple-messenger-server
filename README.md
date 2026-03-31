@@ -13,7 +13,7 @@ REST API для мессенджера на Java Spring Boot.
   ### Message
   - POST /message/send — отправить сообщение
   - GET /message/get/{senderId}/{recipientId} — получить несохраненные сообщения
-  - PUT /message/save/{id} — изменить статус на "Сохраненное"
+  - PUT /message/save/{id} — изменить статус на "Сохраненное" по ID
   - DELETE /message/delete/{id} — удалить сообщение по ID
 
   ### Person
