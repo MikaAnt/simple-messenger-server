@@ -47,24 +47,25 @@ REST API для мессенджера на Java Spring Boot.
     }
 
 ## Структура проекта
+
 src/main/java/com/example/backendant/
-├── BackendAntApplication.java
-├── Message.java
-├── MessageController.java
-├── MessageEntity.java
-├── MessageRepository.java
-├── MessageService.java
-├── MessageStatus.java
-├── Person.java
-├── PersonController.java
-├── PersonEntity.java
-├── PersonRepository.java
-├── PersonService.java
-└── PersonStatus.java
+- BackendAntApplication.java
+- Message.java
+- MessageController.java
+- MessageEntity.java
+- MessageRepository.java
+- MessageService.java
+- MessageStatus.java
+- Person.java
+- PersonController.java
+- PersonEntity.java
+- PersonRepository.java
+- PersonService.java
+- PersonStatus.java
 
 ## Запуск
-git clone https://github.com/MikaAnt/simple-messenger-server.git
-mvn spring-boot:run
+-git clone https://github.com/MikaAnt/simple-messenger-server.git
+-mvn spring-boot:run
 
 ## Ссылка
 https://github.com/MikaAnt/simple-messenger-server
