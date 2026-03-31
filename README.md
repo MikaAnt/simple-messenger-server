@@ -64,8 +64,10 @@ src/main/java/com/example/backendant/
 - PersonStatus.java
 
 ## Запуск
--git clone https://github.com/MikaAnt/simple-messenger-server.git
--mvn spring-boot:run
+```bash
+git clone https://github.com/MikaAnt/simple-messenger-server.git
+cd simple-messenger-server
+mvn spring-boot:run
 
 ## Ссылка
 https://github.com/MikaAnt/simple-messenger-server
