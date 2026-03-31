@@ -31,7 +31,7 @@ REST API для мессенджера на Java Spring Boot.
         "id" : null,   
         "personName" : "Name",
         "personPassword" : "рash_password",
-        "statusPerson" : null,
+        "personStatus" : null,
         "entryTime" : null
     }
   ### Отправка сообщения
@@ -47,23 +47,35 @@ REST API для мессенджера на Java Spring Boot.
     }
 
 ## Структура проекта
-
+```
 src/main/java/com/example/backendant/
-- BackendAntApplication.java
-- Message.java
-- MessageController.java
-- MessageEntity.java
-- MessageRepository.java
-- MessageService.java
-- MessageStatus.java
-- Person.java
-- PersonController.java
-- PersonEntity.java
-- PersonRepository.java
-- PersonService.java
-- PersonStatus.java
+├── BackendAntApplication.java
+├── Message.java
+├── MessageController.java
+├── MessageEntity.java
+├── MessageRepository.java
+├── MessageService.java
+├── MessageStatus.java
+├── Person.java
+├── PersonController.java
+├── PersonEntity.java
+├── PersonRepository.java
+├── PersonService.java
+└── PersonStatus.java
+```
 
-# Запуск PostgreSQL
+## База данных
+
+Проект использует PostgreSQL.
+
+### Настройка подключения
+Файл `src/main/resources/application.properties`:
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+spring.datasource.username=postgres
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=update
+```
 
 ## Запуск
 ```bash
