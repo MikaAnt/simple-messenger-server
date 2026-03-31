@@ -63,6 +63,11 @@ src/main/java/com/example/backendant/
 - PersonService.java
 - PersonStatus.java
 
+# Запуск PostgreSQL (Docker)
+```bash
+docker-compose up -d
+```
+
 ## Запуск
 ```bash
 git clone https://github.com/MikaAnt/simple-messenger-server.git
