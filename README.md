@@ -68,6 +68,7 @@ src/main/java/com/example/backendant/
 git clone https://github.com/MikaAnt/simple-messenger-server.git
 cd simple-messenger-server
 mvn spring-boot:run
+```
 
 ## Ссылка
 https://github.com/MikaAnt/simple-messenger-server
