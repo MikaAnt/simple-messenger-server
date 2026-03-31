@@ -1,0 +1,70 @@
+# Simple Messenger Server
+
+REST API для мессенджера на Java Spring Boot.
+
+## Технологии
+- Java 17
+- Spring Boot 3
+- Spring Data JPA
+- PostgreSQL
+- Maven
+
+## API Endpoints
+  ### Message
+  - POST /message/send — отправить сообщение
+  - GET /message/get/{senderId}/{recipientId} — получить непрочитанные сообщения
+  - PUT /message/save/{id} — сохранить сообщение
+  - DELETE /message/delete/{id} — удалить сообщение
+
+  ### Person
+  - POST /person/create — создать пользователя
+  - GET /person/get/{id} — получить пользователя по ID
+  - PUT /person/update/{id} — обновить данные пользователя
+  - PUT /person/update/status/{id} — обновить статус (онлайн/оффлайн)
+  - DELETE /person/delete/{id} — удалить пользователя
+
+## Примеры запросов
+  ### Создание пользователя
+    POST /person/create
+    ```json
+    {
+        "id" : null,   
+        "personName" : "Name",
+        "personPassword" : "рash_password",
+        "statusPerson" : null,
+        "entryTime" : null
+    }
+  ### Отправка сообщения
+    POST /message/send
+    ```json
+    {
+        "id" : null,   
+        "senderId" : 1,
+        "recipientId" : 2,
+        "textMessage" : "ХОРОШО",
+        "sendingTime" : null,
+        "messageStatus" : null
+    }
+
+## Структура проекта
+src/main/java/com/example/backendant/
+├── BackendAntApplication.java
+├── Message.java
+├── MessageController.java
+├── MessageEntity.java
+├── MessageRepository.java
+├── MessageService.java
+├── MessageStatus.java
+├── Person.java
+├── PersonController.java
+├── PersonEntity.java
+├── PersonRepository.java
+├── PersonService.java
+└── PersonStatus.java
+
+## Запуск
+git clone https://github.com/MikaAnt/simple-messenger-server.git
+mvn spring-boot:run
+
+## Ссылка
+https://github.com/MikaAnt/simple-messenger-server
