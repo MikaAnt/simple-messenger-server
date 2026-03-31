@@ -63,10 +63,7 @@ src/main/java/com/example/backendant/
 - PersonService.java
 - PersonStatus.java
 
-# Запуск PostgreSQL (Docker)
-```bash
-docker-compose up -d
-```
+# Запуск PostgreSQL
 
 ## Запуск
 ```bash
