@@ -19,9 +19,11 @@ REST API для мессенджера на Java Spring Boot.
 
   ### Person
   - POST /person/create — создать пользователя
-![Create person](Снимок экрана 2026-04-01 144509.png)
+![Create person](screenshots/person-create.png)
   - GET /person/get/{id} — получить пользователя по ID
+![Create person](screenshots/person-create.png)
   - PUT /person/update/{id} — обновить данные пользователя по ID
+![Create person](screenshots/person-create.png)
   - PUT /person/update/status/{id} — обновить статус (онлайн/оффлайн) и время пользователя по ID
   - DELETE /person/delete/{id} — удалить пользователя по ID
 
