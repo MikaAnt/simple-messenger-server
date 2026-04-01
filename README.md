@@ -41,7 +41,7 @@ REST API для мессенджера на Java Spring Boot.
         "id" : null,   
         "senderId" : 1,
         "recipientId" : 2,
-        "textMessage" : "ХОРОШО",
+        "textMessage" : "Привет!",
         "sendingTime" : null,
         "messageStatus" : null
     }
