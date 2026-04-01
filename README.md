@@ -10,22 +10,34 @@ REST API для мессенджера на Java Spring Boot.
 - Maven
 
 ## API Endpoints
-  ### Message
-  - POST /message/send — отправить сообщение
-    ####
-  - GET /message/get/{senderId}/{recipientId} — получить несохраненные сообщения
-  - PUT /message/save/{id} — изменить статус на "Сохраненное" по ID
-  - DELETE /message/delete/{id} — удалить сообщение по ID
+### Message
+- POST /message/send — отправить сообщение
+![Send message](screenshots/message-send.png)
 
-  ### Person
-  - POST /person/create — создать пользователя
+- GET /message/get/{senderId}/{recipientId} — получить несохраненные сообщения
+![Get messages](screenshots/message-get-id-id.png)
+
+- PUT /message/save/{id} — изменить статус на "Сохраненное" по ID
+![Save message](screenshots/message-save-id.png)
+
+- DELETE /message/delete/{id} — удалить сообщение по ID
+![Delete message](screenshots/message-delete-id.png)
+
+### Person
+- POST /person/create — создать пользователя
 ![Create person](screenshots/person-create.png)
-  - GET /person/get/{id} — получить пользователя по ID
-![Create person](screenshots/person-create.png)
-  - PUT /person/update/{id} — обновить данные пользователя по ID
-![Create person](screenshots/person-create.png)
-  - PUT /person/update/status/{id} — обновить статус (онлайн/оффлайн) и время пользователя по ID
-  - DELETE /person/delete/{id} — удалить пользователя по ID
+
+- GET /person/get/{id} — получить пользователя по ID
+![Get person](screenshots/person-get-id.png)
+
+- PUT /person/update/{id} — обновить данные пользователя по ID
+![Update person](screenshots/person-update-id.png)
+
+- PUT /person/update/status/{id} — обновить статус (онлайн/оффлайн) и время пользователя по ID
+![Update status](screenshots/person-update-status-id.png)
+
+- DELETE /person/delete/{id} — удалить пользователя по ID
+![Delete person](screenshots/person-delete-id.png)
 
 ## Примеры запросов
   ### Создание пользователя
