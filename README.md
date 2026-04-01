@@ -30,7 +30,7 @@ REST API для мессенджера на Java Spring Boot.
         "id" : null,   
         "personName" : "Name",
         "personPassword" : "hash_password",
-        "statusPerson" : null,
+        "personStatus" : null,
         "entryTime" : null
     }
   ### Отправка сообщения
