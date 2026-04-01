@@ -3,7 +3,7 @@
 REST API для мессенджера на Java Spring Boot.
 
 ## Технологии
-- Java 17
+- Java 21
 - Spring Boot 3
 - Spring Data JPA
 - PostgreSQL
